@@ -1,7 +1,9 @@
 # *
 User-agent: *
-Disallow: /meal/
 Allow: /
+
+# Host
+Host: https://cancelmysubs.com
 
 # Sitemaps
 Sitemap: https://cancelmysubs.com/sitemap.xml

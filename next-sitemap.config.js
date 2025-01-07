@@ -7,11 +7,9 @@ module.exports = {
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
-      { userAgent: '*', disallow: '/meal/' },
       { userAgent: '*', allow: '/' },
     ],
   },
-  exclude: ["/meal", "/meal/*", "/blocked"],
   additionalPaths: async (config) => {
     const result = [];
     const postsDirectory = path.join(process.cwd(), "blog-posts");
