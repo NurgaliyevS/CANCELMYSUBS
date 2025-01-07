@@ -11,7 +11,7 @@ function Main() {
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full gap-16">
         <div className="flex flex-col gap-10 lg:gap-14 items-center lg:items-start text-center lg:text-left w-full lg:w-2/3">
           <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4 flex justify-center items-center text-primary">
-            Pregnant Meal
+            Cancel My Subs
           </h1>
           <p className="hidden lg:block text-xl opacity-90 leading-relaxed">
             Personal <strong className="relative text-primary">meal </strong>
@@ -39,7 +39,7 @@ function Main() {
         <div className="hidden lg:block relative max-md:-m-4 lg:w-1/2">
           <Image
             src={"/main.webp"}
-            alt="Pregnant meal plan"
+            alt="Cancel My Subs plan"
             width={1080}
             height={1080}
             className="w-full max-w-xl ml-auto"

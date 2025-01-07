@@ -19,17 +19,17 @@ function Footer({ bgColor }) {
             <Link
               className="flex gap-2 justify-center md:justify-start items-center"
               href="/"
-              title="Pregnant Meal - home page"
+              title="Cancel My Subs - home page"
             >
               <Image
                 src={"/company_related/logo.webp"}
-                alt="Pregnant Meal logo"
+                alt="Cancel My Subs logo"
                 className="w-5 h-5"
                 priority={true}
                 width={24}
                 height={24}
               />
-              <span className="font-extrabold text-lg">PregnantMeal</span>
+              <span className="font-extrabold text-lg">CancelMySubs</span>
             </Link>
 
             <p className="mt-3 text-sm leading-relaxed">
@@ -97,7 +97,7 @@ function Footer({ bgColor }) {
                 <Link
                   className="link link-hover"
                   href="#pricing"
-                  title="Pregnant Meal - home page"
+                  title="Cancel My Subs - home page"
                   onClick={() => {
                     plausible("PRICING");
                   }}
@@ -107,7 +107,7 @@ function Footer({ bgColor }) {
                 <Link
                   className="link link-hover"
                   href="mailto:nurgasab@gmail.com"
-                  title="Pregnant Meal - home page"
+                  title="Cancel My Subs - home page"
                   onClick={() => {
                     plausible("CONTACT_US");
                   }}
@@ -117,7 +117,7 @@ function Footer({ bgColor }) {
                 <Link
                   className="link link-hover"
                   href="#faq"
-                  title="Pregnant Meal - home page"
+                  title="Cancel My Subs - home page"
                   onClick={() => {
                     plausible("FAQ");
                   }}
@@ -129,7 +129,7 @@ function Footer({ bgColor }) {
                   href={
                     isDevelopment() ? "/blog" : "https://cancelmysubs.com/blog"
                   }
-                  title="Pregnant Meal - blog"
+                  title="Cancel My Subs - blog"
                 >
                   Blog
                 </Link>
@@ -174,7 +174,7 @@ function Footer({ bgColor }) {
                   className="link link-hover"
                   href="https://uptimefriend.com/"
                   target="_blank"
-                  title="Pregnant Meal - home page"
+                  title="Cancel My Subs - home page"
                   onClick={() => {
                     plausible("UptimeFriend");
                   }}

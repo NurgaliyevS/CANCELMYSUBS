@@ -52,17 +52,17 @@ const Header = ({ linksOutside, buttonCore }) => {
           <Link
             className="flex items-center gap-2 shrink-0 "
             href="/"
-            title="Pregnant Meal - home page"
+            title="Cancel My Subs - home page"
           >
             <Image
               src={"/company_related/logo.webp"}
-              alt="Pregnant Meal logo"
+              alt="Cancel My Subs logo"
               className="w-5 h-5"
               priority={true}
               width={24}
               height={24}
             />
-            <span className="font-extrabold text-lg">PregnantMeal</span>
+            <span className="font-extrabold text-lg">CancelMySubs</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -169,18 +169,18 @@ const Header = ({ linksOutside, buttonCore }) => {
           <div className="flex items-center justify-between">
             <Link
               className="flex items-center gap-2 shrink-0 "
-              title="Pregnant Meal - home page"
+              title="Cancel My Subs - home page"
               href="/"
             >
               <Image
                 src={"/company_related/logo.webp"}
-                alt="Pregnant Meal logo"
+                alt="Cancel My Subs logo"
                 className="w-5 h-5"
                 priority={true}
                 width={24}
                 height={24}
               />
-              <span className="font-extrabold text-lg">PregnantMeal</span>
+              <span className="font-extrabold text-lg">CancelMySubs</span>
             </Link>
             <button
               type="button"
