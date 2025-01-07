@@ -3,7 +3,7 @@ const fs = require('fs');
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://pregnantmeal.com",
+  siteUrl: "https://cancelmysubs.com",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [

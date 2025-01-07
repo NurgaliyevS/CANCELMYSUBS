@@ -40,7 +40,7 @@ const PrivacyPolicy = () => {
         >
           {`Last Updated: 2024-08-08
 
-Thank you for visiting PregnantMeal ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website located at https://pregnantmeal.com (the "Website").
+Thank you for visiting PregnantMeal ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website located at https://cancelmysubs.com (the "Website").
 
 By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
 

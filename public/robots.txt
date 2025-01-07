@@ -4,4 +4,4 @@ Disallow: /meal/
 Allow: /
 
 # Sitemaps
-Sitemap: https://pregnantmeal.com/sitemap.xml
+Sitemap: https://cancelmysubs.com/sitemap.xml

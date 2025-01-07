@@ -5,17 +5,17 @@ export const customConfig = {
     theme: "winter",
     main: themes[`[data-theme=winter"]`],
   },
-  // example as pregnantmeal.com without https://
-  domainName: "pregnantmeal.com",
+  // example as cancelmysubs.com without https://
+  domainName: "cancelmysubs.com",
   mailgun: {
     subdomain: "mg",
-    fromNoReply: `PregnantMeal <noreply@mg.pregnantmeal.com>`,
-    fromAdmin: `PregnantMeal <admin@mg.pregnantmeal.com>`,
-    supportEmail: "support@pregnantmeal.com",
+    fromNoReply: `PregnantMeal <noreply@mg.cancelmysubs.com>`,
+    fromAdmin: `PregnantMeal <admin@mg.cancelmysubs.com>`,
+    supportEmail: "support@cancelmysubs.com",
     forwardRepliesTo: "nurgasab@gmail.com",
   },
   documentTitle: "Yummy Meals, Strong Baby - PregnantMeal",
-  domainWithHttps: "https://pregnantmeal.com",
+  domainWithHttps: "https://cancelmysubs.com",
   seo: {
     keywords:
       "first trimester recipes, 7 day meal plan for pregnant woman, pregnancy dinner recipes first trimester, dinner ideas for first trimester, meal plans for pregnant moms",
@@ -25,20 +25,20 @@ export const customConfig = {
     applicationName: "pregnantmeal",
     og: {
       title: "PregnantMeal - Yummy Meals, Strong Baby!",
-      url: "https://pregnantmeal.com",
-      image: "https://pregnantmeal.com/company_related/og-image.webp",
+      url: "https://cancelmysubs.com",
+      image: "https://cancelmysubs.com/company_related/og-image.webp",
       imageAlt:
         "PregnantMeal - Yummy Meals, Strong Baby! Get personalized daily, weekly, and monthly meal plans for a healthy pregnancy. Eat smart and grow a happy baby with our easy-to-use food guide.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
-      twitterImage: "https://pregnantmeal.com/company_related/og-image.webp",
+      twitterImage: "https://cancelmysubs.com/company_related/og-image.webp",
     },
   },
   blog: {
     title: "PregnantMeal Blog",
     description:
       "Foods to avoid during pregnancy, first trimester recipes, 7 day meal plan for pregnant woman, pregnancy food aversions, pregnancy dinner recipes first trimester, dinner ideas for first trimester, meal plans for pregnant moms",
-    canonical: "https://pregnantmeal.com/blog",
+    canonical: "https://cancelmysubs.com/blog",
     author: {
       name: "Sabyr Nurgaliyev",
       description:
