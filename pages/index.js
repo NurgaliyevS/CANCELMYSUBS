@@ -21,10 +21,10 @@ export default function Home() {
         <title>{customConfig.documentTitle}</title>
         <link rel="canonical" href={customConfig.domainWithHttps} />
       </Head>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-700 shadow-md">
+        <div className="container mx-auto px-8 py-4 flex items-center justify-between">
           <a className="flex items-center justify-center" href="#">
-            <span className="font-bold text-2xl">CANCELMYSUBS.COM</span>
+            <span className="font-extrabold text-xl">cancelmysubs.com</span>
           </a>
           <Button
             size="sm"
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-1">
           <motion.section
-            className="w-full py-12 md:py-24 lg:py-32 xl:py-48"
+            className="w-full py-24 lg:py-32 xl:py-48"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -51,7 +51,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.8 }}
                 >
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 sm:mb-6">
                     Cancel All Your Subscriptions
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -60,7 +60,7 @@ export default function Home() {
                   </p>
                 </motion.div>
                 <motion.div
-                  className="space-x-4"
+                  className="space-x-4 sm:space-y-0 sm:space-x-4 flex flex-col gap-4 sm:flex-row"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4, duration: 0.8 }}
@@ -71,14 +71,6 @@ export default function Home() {
                   >
                     Connect Gmail
                     <Mail className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="inline-flex items-center justify-center border-2 border-primary text-primary bg-background hover:bg-primary hover:text-white transition-colors"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </motion.div>
               </div>
@@ -110,7 +102,7 @@ export default function Home() {
                 </p>
                 <div className="text-center mt-8">
                   <Button size="lg">
-                    Connect Gmail and Get Started
+                    Connect Gmail
                     <Mail className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
@@ -313,13 +305,6 @@ export default function Home() {
                   >
                     Get Started Now
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="inline-flex items-center justify-center border-2 border-white text-white bg-primary hover:bg-white hover:text-primary transition-colors"
-                  >
-                    Learn More
                   </Button>
                 </div>
               </div>
