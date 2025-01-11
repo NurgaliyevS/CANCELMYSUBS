@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
@@ -19,10 +19,11 @@ export function HeroSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 sm:mb-6">
-              Cancel All Your Subscriptions
+              Stop Wasting Money on Subscriptions
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Connect your Gmail and we'll find all your subscriptions. Manage and cancel them easily from one dashboard.
+              The average person wastes $348 annually on forgotten
+              subscriptions. Start saving now with one Gmail connection
             </p>
           </motion.div>
           <motion.div
@@ -31,7 +32,10 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <Button size="lg" className="inline-flex items-center justify-center">
+            <Button
+              size="lg"
+              className="inline-flex items-center justify-center"
+            >
               Connect Gmail
               <Mail className="ml-2 h-4 w-4" />
             </Button>
@@ -39,5 +43,5 @@ export function HeroSection() {
         </div>
       </div>
     </motion.section>
-  )
-} 
+  );
+}

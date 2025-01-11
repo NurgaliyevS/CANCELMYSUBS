@@ -8,7 +8,7 @@ export function HowItWorksSection() {
     >
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-          How It Works
+        Your Path to Subscription Freedom
         </h2>
         <HowItWorksAnimation />
       </div>

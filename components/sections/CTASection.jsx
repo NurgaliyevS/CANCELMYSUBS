@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function CTASection() {
   return (
@@ -11,7 +11,8 @@ export function CTASection() {
               Ready to Take Control?
             </h2>
             <p className="mx-auto max-w-[700px] text-primary-foreground/90 md:text-xl">
-              Start managing your subscriptions today and see how much you can save.
+              Start managing your subscriptions today and see how much you can
+              save.
             </p>
           </div>
           <div className="space-x-4">
@@ -19,12 +20,12 @@ export function CTASection() {
               size="lg"
               className="inline-flex items-center justify-center bg-white text-primary hover:bg-white/90"
             >
-              Get Started Now
+              Stop Overpaying Today
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
       </div>
     </section>
-  )
-} 
+  );
+}
