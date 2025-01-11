@@ -9,8 +9,8 @@ const PRICING_PLANS = [
     features: [
       "Up to 10 subscriptions",
       "Email notifications",
-      "Basic analytics"
-    ]
+      "Basic analytics",
+    ],
   },
   {
     plan: "Pro",
@@ -20,9 +20,9 @@ const PRICING_PLANS = [
     features: [
       "Unlimited subscriptions",
       "Advanced analytics",
-      "Priority support"
+      "Priority support",
     ],
-    isPro: true
+    isPro: true,
   },
   {
     plan: "Enterprise",
@@ -32,14 +32,17 @@ const PRICING_PLANS = [
     features: [
       "Custom integrations",
       "Dedicated account manager",
-      "24/7 premium support"
-    ]
-  }
+      "24/7 premium support",
+    ],
+  },
 ];
 
 export function PricingSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section
+      className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
+      id="pricing"
+    >
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
           Simple, Transparent Pricing
