@@ -6,7 +6,7 @@ import { AlertCircle, DollarSign, Users, Lock } from 'lucide-react'
 
 export function WhyNowAnimation() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const isInView = useInView(ref, { once: false, amount: 0.2 })
 
   const containerVariants = {
     hidden: { opacity: 0 },
