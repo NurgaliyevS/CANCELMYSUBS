@@ -13,7 +13,9 @@ export function Footer() {
             <h3 className="text-2xl font-bold text-gray-800 mb-3">
               cancelmysubs.com
             </h3>
-            <p className="text-gray-600 mb-4">Cancel All Your Subscriptions.</p>
+            <p className="text-gray-600 mb-4">
+              Stop Wasting Money on Subscriptions.
+            </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <Link
                 href="https://x.com/tech_nurgaliyev"
@@ -68,7 +70,8 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "#pricing", label: "Pricing" },
-                { href: "#howitworks", label: "How It Works"}
+                { href: "#freedom", label: "Reality Check" },
+                { href: "#faq", label: "FAQ" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link

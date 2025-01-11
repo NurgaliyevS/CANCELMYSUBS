@@ -4,7 +4,7 @@ import { Mail, ArrowRight, CheckCircle } from "lucide-react"
 
 export function HowItWorksAnimation() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: false, margin: "-100px" })
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const containerVariants = {
     hidden: { opacity: 0 },

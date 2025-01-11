@@ -7,7 +7,7 @@ import { useRef } from "react"
 
 export function PricingCard({ plan, price, description, buttonText, features, isPro }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: false, margin: "-100px" })
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },

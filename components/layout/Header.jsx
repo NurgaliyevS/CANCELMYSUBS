@@ -23,10 +23,16 @@ export function Header() {
             Pricing
           </a>
           <a
-            href="#howitworks"
+            href="#freedom"
             className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
           >
-            How it works
+            Reality Check
+          </a>
+          <a
+            href="#faq"
+            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+          >
+            FAQ
           </a>
         </nav>
 

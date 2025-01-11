@@ -23,7 +23,7 @@ export function HeroSection() {
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
               The average person wastes $348 annually on forgotten
-              subscriptions. Start saving now with one Gmail connection
+              subscriptions. Find your hidden charges now.
             </p>
           </motion.div>
           <motion.div

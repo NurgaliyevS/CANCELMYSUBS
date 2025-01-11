@@ -8,6 +8,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { customConfig } from "@/project.custom.config";
 import { WhyNowSection } from "@/components/sections/WhyNowSection";
+import FAQSection from "@/components/sections/FAQSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <WhyNowSection />
           <HowItWorksSection />
           <PricingSection />
+          <FAQSection />
           <CTASection />
         </main>
         <Footer />
