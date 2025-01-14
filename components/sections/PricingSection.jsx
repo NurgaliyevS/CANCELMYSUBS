@@ -1,39 +1,32 @@
-import { PricingCard } from "@/components/PricingCard";
+import PricingCard from "../PricingCard";
 
 const PRICING_PLANS = [
   {
-    plan: "Basic",
-    price: "$9.99",
-    description: "For individuals just getting started",
-    buttonText: "Get Started",
+    plan: "Basic Scan",
+    price: "$29",
+    description: "Quick subscription check",
+    buttonText: "Find My Hidden Costs",
     features: [
-      "Up to 10 subscriptions",
-      "Email notifications",
-      "Basic analytics",
+      "Gmail subscription finder",
+      "Simple dashboard view",
+      "Basic PDF report",
+      "30-day email support",
+      "List of all subscriptions",
     ],
   },
   {
-    plan: "Pro",
-    price: "$19.99",
-    description: "For power users with multiple subscriptions",
-    buttonText: "Upgrade to Pro",
+    plan: "Pro Scan",
+    price: "$49",
+    description: "Complete subscription management",
+    buttonText: "Start Saving Now",
     features: [
-      "Unlimited subscriptions",
-      "Advanced analytics",
-      "Priority support",
+      "Multiple email accounts",
+      "Detailed savings report",
+      "Cancellation templates",
+      "60-day email support",
+      "Priority processing",
     ],
     isPro: true,
-  },
-  {
-    plan: "Enterprise",
-    price: "Custom",
-    description: "For large organizations and teams",
-    buttonText: "Contact Sales",
-    features: [
-      "Custom integrations",
-      "Dedicated account manager",
-      "24/7 premium support",
-    ],
   },
 ];
 
@@ -44,14 +37,21 @@ export function PricingSection() {
       id="pricing"
     >
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-          Simple, Transparent Pricing
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4">
+          Simple One-Time Payment
         </h2>
-        <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-3 md:gap-8 items-start">
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
+          No subscriptions. Just pay once and take control.
+        </p>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-start max-w-5xl mx-auto">
           {PRICING_PLANS.map((plan, index) => (
             <PricingCard key={index} {...plan} />
           ))}
         </div>
+        <p className="text-center mt-3 text-sm text-gray-500 dark:text-gray-400">
+          Not happy with your savings? Get your money back within 30 days, no
+          questions asked
+        </p>
       </div>
     </section>
   );
