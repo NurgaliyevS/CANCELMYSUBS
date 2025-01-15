@@ -10,7 +10,6 @@ function PricingCard({
   price,
   originalPrice,
   description,
-  duration,
   buttonText,
   features,
   isPro,
@@ -51,8 +50,8 @@ function PricingCard({
         }`}
       >
         {isPro && (
-          <div className="absolute top-0 right-0 m-4 flex items-center text-xs font-bold text-white bg-primary px-3 py-1 rounded-full">
-            Most Popular
+          <div className="absolute top-0 right-0 m-4 flex items-center text-xs text-white bg-primary px-3 py-1 rounded-full bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 dark:text-gray-900">
+            Most beneficial
           </div>
         )}
 
@@ -60,20 +59,20 @@ function PricingCard({
           {/* Header */}
           <div className="mb-6">
             <div className="flex items-center mb-2">
-              <h3 className="text-lg font-medium">{plan}</h3>
-              <div className="flex items-center ml-3">
-                <span className="text-sm line-through text-gray-400 mr-2">
-                  {originalPrice}
-                </span>
+              <h3 className="text-2xl font-bold">{plan}</h3>
+              <div className="flex flex-baseline ml-3">
                 <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs rounded-full">
                   Save 30%
                 </span>
               </div>
             </div>
             <div className="flex items-baseline gap-1">
+              <span className="text-sm line-through text-gray-400 mr-2">
+                {originalPrice}
+              </span>
               <span className="text-3xl font-bold">{price}</span>
-              <span className="text-gray-500 dark:text-gray-400 text-sm">
-                / {duration}
+              <span className="text-sm text-gray-500 dark:text-gray-400 mr-2">
+                USD
               </span>
             </div>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
@@ -84,7 +83,7 @@ function PricingCard({
           {/* Early Bird Banner */}
           <div className="mb-6 px-4 py-2 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/50 rounded-lg">
             <p className="text-sm text-amber-800 dark:text-amber-200 text-center font-medium">
-              Early Bird: 30% off - Limited time!
+              Launch Special: Save 30% Today!
             </p>
           </div>
 

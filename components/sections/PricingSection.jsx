@@ -2,33 +2,31 @@ import PricingCard from "../PricingCard";
 
 const PRICING_PLANS = [
   {
-    plan: "Basic Scan",
-    price: "$28",
-    description: "Quick subscription check",
+    plan: "1-Year Pass",
+    price: "28$",
+    description: "Perfect for finding your first hidden costs",
     buttonText: "Find My Hidden Costs",
     features: [
-      "Gmail subscription finder",
-      "Simple dashboard view",
-      "Basic PDF report",
+      "Find all hidden subscriptions in Gmail",
+      "Track everything in one place",
       "30-day email support",
       "List of all subscriptions",
     ],
-    duration: "1 year access"
+    originalPrice: "40$",
   },
   {
-    plan: "Pro Scan",
-    price: "$49",
-    description: "Complete subscription management",
+    plan: "Lifetime Deal",
+    price: "42$",
+    description: "For serious subscription cleanups",
     buttonText: "Start Saving Now",
     features: [
-      "Multiple email accounts",
-      "Detailed savings report",
-      "Cancellation templates",
-      "60-day email support",
-      "Priority processing",
+      "Find all hidden subscriptions in Gmail",
+      "Track everything in one place",
+      "30-day email support",
+      "List of all subscriptions",
     ],
+    originalPrice: "60$",
     isPro: true,
-    duration: "1 year access"
   },
 ];
 
@@ -40,10 +38,10 @@ export function PricingSection() {
     >
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4">
-          Simple One-Time Payment
+          Stop Paying for Things You Don't Use
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
-          No subscriptions. Just pay once and take control.
+          Find and cancel forgotten subscriptions in minutes.
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-start max-w-5xl mx-auto">
           {PRICING_PLANS.map((plan, index) => (
