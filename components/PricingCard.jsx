@@ -1,21 +1,16 @@
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import React, { useRef } from "react";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
-import { useRef } from "react";
+import { CheckCircle, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 
 function PricingCard({
   plan,
   price,
+  originalPrice,
   description,
+  duration,
   buttonText,
   features,
   isPro,
@@ -28,12 +23,7 @@ function PricingCard({
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        staggerChildren: 0.1,
-      },
+      transition: { type: "spring", stiffness: 100, damping: 10 },
     },
   };
   const itemVariants = {
@@ -56,17 +46,50 @@ function PricingCard({
       animate={isInView ? "visible" : "hidden"}
     >
       <Card
-        className={`flex flex-col ${isPro ? "border-primary shadow-lg" : ""}`}
+        className={`relative overflow-hidden ${
+          isPro ? "border-primary shadow-lg" : ""
+        }`}
       >
-        <CardHeader>
-          <CardTitle className="flex items-center justify-between">
-            <span>{plan}</span>
-            <span className="text-2xl font-bold">{price}</span>
-          </CardTitle>
-          <CardDescription>{description}</CardDescription>
-        </CardHeader>
-        <CardContent className="flex-grow">
-          <ul className="space-y-3">
+        {isPro && (
+          <div className="absolute top-0 right-0 m-4 flex items-center text-xs font-bold text-white bg-primary px-3 py-1 rounded-full">
+            Most Popular
+          </div>
+        )}
+
+        <div className="p-8">
+          {/* Header */}
+          <div className="mb-6">
+            <div className="flex items-center mb-2">
+              <h3 className="text-lg font-medium">{plan}</h3>
+              <div className="flex items-center ml-3">
+                <span className="text-sm line-through text-gray-400 mr-2">
+                  {originalPrice}
+                </span>
+                <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs rounded-full">
+                  Save 30%
+                </span>
+              </div>
+            </div>
+            <div className="flex items-baseline gap-1">
+              <span className="text-3xl font-bold">{price}</span>
+              <span className="text-gray-500 dark:text-gray-400 text-sm">
+                / {duration}
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              {description}
+            </p>
+          </div>
+
+          {/* Early Bird Banner */}
+          <div className="mb-6 px-4 py-2 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/50 rounded-lg">
+            <p className="text-sm text-amber-800 dark:text-amber-200 text-center font-medium">
+              Early Bird: 30% off - Limited time!
+            </p>
+          </div>
+
+          {/* Features */}
+          <ul className="space-y-4 mb-8">
             {features.map((feature, index) => (
               <motion.li
                 key={index}
@@ -78,18 +101,18 @@ function PricingCard({
               </motion.li>
             ))}
           </ul>
-        </CardContent>
-        <CardFooter>
+
+          {/* Button */}
           <Button
-            className={`w-full ${
+            className={`w-full py-6 ${
               isPro
-                ? "bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800"
-                : ""
+                ? "bg-blue-600 hover:bg-blue-700 text-white"
+                : "bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 dark:text-gray-900"
             }`}
           >
             {buttonText}
           </Button>
-        </CardFooter>
+        </div>
       </Card>
     </motion.div>
   );

@@ -3,7 +3,7 @@ import PricingCard from "../PricingCard";
 const PRICING_PLANS = [
   {
     plan: "Basic Scan",
-    price: "$29",
+    price: "$28",
     description: "Quick subscription check",
     buttonText: "Find My Hidden Costs",
     features: [
@@ -13,6 +13,7 @@ const PRICING_PLANS = [
       "30-day email support",
       "List of all subscriptions",
     ],
+    duration: "1 year access"
   },
   {
     plan: "Pro Scan",
@@ -27,6 +28,7 @@ const PRICING_PLANS = [
       "Priority processing",
     ],
     isPro: true,
+    duration: "1 year access"
   },
 ];
 
