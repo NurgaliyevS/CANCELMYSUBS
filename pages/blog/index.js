@@ -6,7 +6,7 @@ import path from "path";
 import matter from "gray-matter";
 import { format } from "date-fns";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/layout/Footer";
 import { isDevelopment } from "@/utils/isDevelopment";
 import { customConfig } from "@/project.custom.config";
 import BlogHeader from "@/components/BlogHeader";

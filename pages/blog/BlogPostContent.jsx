@@ -1,11 +1,11 @@
 import RelatedArticles from "./RelatedArticles";
-import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { format } from "date-fns";
 import BlogHeader from "@/components/BlogHeader";
 import { renderAst } from "@/utils/renderAst";
+import { Footer } from "@/components/layout/Footer";
 
 function BlogPostContent({ post, relatedPosts }) {
   if (!post) {
@@ -132,7 +132,7 @@ function BlogPostContent({ post, relatedPosts }) {
         </article>
       </main>
       <footer>
-        <Footer bgColor={"bg-slate-200"} />
+        <Footer />
       </footer>
     </div>
   );
