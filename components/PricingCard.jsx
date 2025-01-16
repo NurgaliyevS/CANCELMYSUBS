@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { Link } from "./ui/link";
 
 function PricingCard({
   plan,
@@ -13,6 +14,7 @@ function PricingCard({
   buttonText,
   features,
   isPro,
+  link,
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -101,16 +103,18 @@ function PricingCard({
             ))}
           </ul>
 
-          {/* Button */}
-          <Button
+          <Link
             className={`w-full py-6 ${
               isPro
                 ? "bg-blue-600 hover:bg-blue-700 text-white"
                 : "bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 dark:text-gray-900"
             }`}
+            variant="default"
+            size="lg"
+            href={link}
           >
             {buttonText}
-          </Button>
+          </Link>
         </div>
       </Card>
     </motion.div>

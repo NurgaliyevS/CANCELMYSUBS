@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "../ui/link";
 
 export function HeroSection() {
   return (
@@ -32,13 +32,15 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <Button
+            <Link
+              href="https://buy.stripe.com/14k4jDfV00TC83C009"
+              variant="default"
               size="lg"
               className="inline-flex items-center justify-center"
             >
               Connect Gmail
               <Mail className="ml-2 h-4 w-4" />
-            </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

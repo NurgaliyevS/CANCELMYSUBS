@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Mail, Menu, X } from "lucide-react";
+import { Link } from "../ui/link";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,10 +38,15 @@ export function Header() {
 
         {/* Desktop Button - hidden on mobile */}
         <div className="hidden md:block">
-          <Button size="sm" className="inline-flex items-center justify-center">
+          <Link
+            href="https://buy.stripe.com/14k4jDfV00TC83C009"
+            variant="default"
+            size="sm"
+            className="inline-flex items-center justify-center"
+          >
             Connect Gmail
             <Mail className="ml-2 h-4 w-4" />
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -72,13 +77,15 @@ export function Header() {
               >
                 How it works
               </a>
-              <Button
+              <Link
+                href="https://buy.stripe.com/14k4jDfV00TC83C009"
+                variant="default"
                 size="sm"
                 className="inline-flex items-center justify-center"
               >
                 Connect Gmail
                 <Mail className="ml-2 h-4 w-4" />
-              </Button>
+              </Link>
             </nav>
           </div>
         )}

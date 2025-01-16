@@ -4,7 +4,7 @@ const PRICING_PLANS = [
   {
     plan: "1-Year Pass",
     price: "28$",
-    description: "Perfect for finding your first hidden costs",
+    description: "Perfect for finding your first hidden subscriptions",
     buttonText: "Find My Hidden Costs",
     features: [
       "Find all hidden subscriptions in Gmail",
@@ -13,6 +13,7 @@ const PRICING_PLANS = [
       "List of all subscriptions",
     ],
     originalPrice: "40$",
+    link: "https://buy.stripe.com/14k4jDfV00TC83C009"
   },
   {
     plan: "Lifetime Deal",
@@ -27,6 +28,7 @@ const PRICING_PLANS = [
     ],
     originalPrice: "60$",
     isPro: true,
+    link: "https://buy.stripe.com/3cseYh4cifOw6ZyeV4"
   },
 ];
 
