@@ -8,7 +8,6 @@ export function HeroSection() {
       className="w-full py-24 lg:py-32 xl:py-48"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
     >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
@@ -16,7 +15,7 @@ export function HeroSection() {
             className="space-y-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1 }}
           >
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 sm:mb-6">
               Stop Wasting Money on Subscriptions
@@ -30,7 +29,7 @@ export function HeroSection() {
             className="space-x-4 sm:space-y-0 sm:space-x-4 flex flex-col gap-4 sm:flex-row"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.1  }}
           >
             <Link
               href="https://buy.stripe.com/14k4jDfV00TC83C009?prefilled_promo_code=LAUNCH"
