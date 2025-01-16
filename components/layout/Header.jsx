@@ -39,7 +39,7 @@ export function Header() {
         {/* Desktop Button - hidden on mobile */}
         <div className="hidden md:block">
           <Link
-            href="https://buy.stripe.com/14k4jDfV00TC83C009"
+            href="https://buy.stripe.com/14k4jDfV00TC83C009?prefilled_promo_code=LAUNCH"
             variant="default"
             size="sm"
             className="inline-flex items-center justify-center"
@@ -78,7 +78,7 @@ export function Header() {
                 How it works
               </a>
               <Link
-                href="https://buy.stripe.com/14k4jDfV00TC83C009"
+                href="https://buy.stripe.com/14k4jDfV00TC83C009?prefilled_promo_code=LAUNCH"
                 variant="default"
                 size="sm"
                 className="inline-flex items-center justify-center"

@@ -13,7 +13,7 @@ const PRICING_PLANS = [
       "List of all subscriptions",
     ],
     originalPrice: "40$",
-    link: "https://buy.stripe.com/14k4jDfV00TC83C009"
+    link: "https://buy.stripe.com/14k4jDfV00TC83C009?prefilled_promo_code=LAUNCH"
   },
   {
     plan: "Lifetime Deal",
@@ -28,7 +28,7 @@ const PRICING_PLANS = [
     ],
     originalPrice: "60$",
     isPro: true,
-    link: "https://buy.stripe.com/3cseYh4cifOw6ZyeV4"
+    link: "https://buy.stripe.com/3cseYh4cifOw6ZyeV4?prefilled_promo_code=LAUNCH"
   },
 ];
 

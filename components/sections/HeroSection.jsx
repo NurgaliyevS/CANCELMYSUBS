@@ -33,7 +33,7 @@ export function HeroSection() {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <Link
-              href="https://buy.stripe.com/14k4jDfV00TC83C009"
+              href="https://buy.stripe.com/14k4jDfV00TC83C009?prefilled_promo_code=LAUNCH"
               variant="default"
               size="lg"
               className="inline-flex items-center justify-center"
