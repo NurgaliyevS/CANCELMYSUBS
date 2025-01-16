@@ -1,5 +1,4 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const TWEET_IDS = [
   "1874958758641840251",
@@ -14,15 +13,8 @@ const TWEET_IDS = [
 ];
 
 export function TestimonialsSection() {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { 
-    once: true,
-    amount: 0.2
-  });
-
   return (
     <section
-      ref={sectionRef}
       className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
       id="freedom"
     >
@@ -30,7 +22,7 @@ export function TestimonialsSection() {
         <motion.h2
           className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12"
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           The Subscription Problem is Real
@@ -40,7 +32,7 @@ export function TestimonialsSection() {
             <motion.div
               key={tweetId}
               initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col"
             >
