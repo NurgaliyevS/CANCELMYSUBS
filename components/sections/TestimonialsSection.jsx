@@ -1,4 +1,6 @@
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 const TWEET_IDS = [
   "1874958758641840251",
@@ -34,17 +36,22 @@ export function TestimonialsSection() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col"
+              className="bg-white dark:bg-gray-900 rounded-lg shadow-lg h-[350px]"
             >
-              <div className="p-4 flex-1 flex flex-col">
-                <div className="flex-1 min-h-[250px] max-h-[350px] overflow-y-auto">
-                  <blockquote
-                    className="twitter-tweet"
-                    data-conversation="none"
-                    data-theme="white"
-                  >
-                    <a href={`https://twitter.com/user/status/${tweetId}`}></a>
-                  </blockquote>
+              <div className="h-full p-4">
+                <div className="h-full overflow-y-auto">
+                  <TwitterTweetEmbed
+                    tweetId={tweetId}
+                    options={{
+                      conversation: "none",
+                      theme: "light",
+                      width: "100%",
+                      height: "100%"
+                    }}
+                    placeholder={
+                      <div className="w-full h-full bg-white dark:bg-gray-900" />
+                    }
+                  />
                 </div>
               </div>
             </motion.div>
@@ -54,3 +61,5 @@ export function TestimonialsSection() {
     </section>
   );
 }
+
+export default TestimonialsSection;
