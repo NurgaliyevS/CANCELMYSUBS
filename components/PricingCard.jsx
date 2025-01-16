@@ -51,7 +51,7 @@ function PricingCard({
       >
         {isPro && (
           <div className="absolute top-0 right-0 m-4 flex items-center text-xs text-white bg-primary px-3 py-1 rounded-full bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 dark:text-gray-900">
-            Most beneficial
+            Recommended
           </div>
         )}
 
