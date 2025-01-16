@@ -15,7 +15,7 @@ function BlogHeader() {
             title="cancelmysubs.com home page"
           >
             <Image
-              src={"/company_related/logo.webp"}
+              src={"/company_related/logo.png"}
               alt="Cancel My Subs logo"
               className="w-5 h-5"
               priority={true}
@@ -87,7 +87,7 @@ function BlogHeader() {
               href="/"
             >
               <Image
-                src={"/company_related/logo.webp"}
+                src={"/company_related/logo.png"}
                 alt="Cancel My Subs logo"
                 className="w-5 h-5"
                 priority={true}

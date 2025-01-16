@@ -25,12 +25,12 @@ export const customConfig = {
     og: {
       title: "CancelMySubs - Cancel Your Subscriptions",
       url: "https://cancelmysubs.com",
-      image: "https://cancelmysubs.com/company_related/og-image.webp",
+      image: "https://cancelmysubs.com/company_related/og-image.png",
       imageAlt:
         "CancelMySubs - Cancel Your Subscriptions. Save money and take control of your recurring payments.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
-      twitterImage: "https://cancelmysubs.com/company_related/og-image.webp",
+      twitterImage: "https://cancelmysubs.com/company_related/og-image.png",
     },
   },
   blog: {
