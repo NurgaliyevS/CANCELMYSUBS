@@ -92,13 +92,15 @@ export function Footer() {
             </h4>
             <div className="grid grid-cols-1 gap-2">
               {[
-                { href: "https://snapmybaby.com/", label: "SnapMyBaby" },
                 { href: "https://mvpagency.org/", label: "MVPAgency" },
+                { href: "https://pregnantmeal.com/", label: "PregnantMeal" },
+                { href: "https://bestwebsitegames.com/", label: "Best Website Games" },
+                { href: "https://redditagency.com/", label: "Reddit Agency" },
+                { href: "https://snapmybaby.com/", label: "SnapMyBaby" },
                 {
                   href: "https://environmentaljobboards.com/",
                   label: "Environmental Job Boards",
                 },
-                { href: "https://pregnantmeal.com/", label: "PregnantMeal" },
                 { href: "https://subpage.io/", label: "SubPage" },
                 { href: "https://uptimefriend.com/", label: "UptimeFriend" },
                 { href: "https://tripplanss.com/", label: "TripPlanss" },
