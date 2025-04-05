@@ -92,6 +92,7 @@ export function Footer() {
             </h4>
             <div className="grid grid-cols-1 gap-2">
               {[
+                { href: "https://www.redditscheduler.com", label: "Reddit Scheduler" },
                 { href: "https://mvpagency.org/", label: "MVPAgency" },
                 { href: "https://pregnantmeal.com/", label: "PregnantMeal" },
                 { href: "https://bestwebsitegames.com/", label: "Best Website Games" },
